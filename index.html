@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/mDEetAO.png">
+    <title>Trocando Passos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com o nome da loja e menu de navegação -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://i.imgur.com/mDEetAO.png" alt="Trocando Passos" class="logo">
+                <h1>Trocando Passos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#shop">Loja</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#account"><i class="fas fa-user"></i> Minha Conta</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Banner com animação -->
+    <section id="home" class="banner">
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h2>Entre em Movimento!</h2>
+            <p>Troque seu tênis usado que está deixado de lado, porém muito bem conservado por um novo ou você pode trazer na loja para analisamos o estado do seu tênis e você pode ganhar uma quantia em dinheiro, em troca do tênis. Faça parte do movimento sustentável.</p>
+            <a href="#shop" class="btn">Confira Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos (Loja) -->
+    <section id="shop" class="shop">
+        <h2>Explore Nossa Coleção</h2>
+        <div class="product-filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Masculino</button>
+            <button class="filter-btn">Feminino</button>
+            <button class="filter-btn">Promoções</button>
+        </div>
+        <div class="product">
+            <div class="product-img">
+                <img src="https://imgnike-a.akamaihd.net/768x768/026461IMA8.jpg" alt="Tênis 1" class="center-image">
+                <h3>Tênis Running</h3>
+                <p>BARATINHO</p>
+                <div class="button-container">
+                    <a href="#" class="btn">Conferir</a>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="https://imgnike-a.akamaihd.net/1920x1920/017075IDA10.jpg" alt="Tênis 2" class="center-image">
+                <h3>Tênis Casual</h3>
+                <p>CONFIA NA CALL</p>
+                <div class="button-container">
+                    <a href="#" class="btn">Conferir</a>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="https://imgnike-a.akamaihd.net/768x768/028131IDA8.jpg" alt="Tênis 3" class="center-image">
+                <h3>Tênis Esportivo</h3>
+                <p>PAAAPAAAIII LEEEBRAAAOOOO</p>
+                <div class="button-container">
+                    <a href="#" class="btn">Conferir</a>
+                </div>
+            </div>
+            <!-- Adicionar mais produtos -->
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="about" class="about">
+        <h2>Sobre a Trocando Passos</h2>
+        <p>Somos mais que uma loja de troca de tênis, somos um movimento pela sustentabilidade. Acreditamos que cada tênis pode ter mais de uma vida e ajudamos você a dar essa segunda chance. Troque seu tênis usado que está deixado de lado, porém muito bem conservado por um novo ou você pode trazer na loja para analisamos o estado do seu tênis e você pode ganhar uma quantia em dinheiro, em troca do tênis. Faça parte do movimento sustentável.</p>
+    </section>
+
+    <!-- Seção de Avaliações -->
+    <section class="reviews-section">
+        <h2>Deixe sua Avaliação</h2>
+        <form id="reviewform" class="review-form">
+            <input type="text" id="reviewer-name" placeholder="Seu nome" required>
+            <textarea id="review" placeholder="Sua avaliação" required></textarea>
+            <button type="submit" class="btn">Enviar Avaliação</button>
+        </form>
+        <div class="reviews-list" id="reviews-list">
+            <!-- As avaliações aparecerão aqui -->
+        </div>
+        <span class="review-message">Agradecemos sua contribuição! Sua opinião é muito importante para nós.</span>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/trocando_passos?igsh=MXd5d3R3NHQ3N3IxaQ=="><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Tênis em Movimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="empre.js"></script>
+</body>
+</html>
