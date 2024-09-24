@@ -307,14 +307,3 @@ nav ul li a:hover {
         font-size: 14px;
     }
 }
-.logo {
-    width: 70px; /* Tamanho padrão para telas maiores */
-    height: auto; /* Mantém a proporção */
-}
-
-@media (max-width: 768px) {
-    .logo {
-        width: 70px; /* Tamanho menor para telas menores */
-    }
-}
-
