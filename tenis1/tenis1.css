@@ -296,5 +296,10 @@ nav ul li a:hover {
     border-radius: 5px;
     margin: 0.5em;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas em telas maiores */
+    gap: 0.1em;
+}
 
 
