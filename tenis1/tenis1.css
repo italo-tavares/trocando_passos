@@ -280,42 +280,37 @@ nav ul li a:hover {
     margin: 2em;
     gap: 2em;
     margin-top: 100px; /* Altere o valor conforme necessário para o espaçamento desejado */
-    flex-direction: column; /* Adiciona a coluna por padrão */
+    flex-direction: column; /* Mantém a coluna por padrão */
 }
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas em telas maiores */
     gap: 0.1em;
-    overflow-x: auto; /* Permite rolagem horizontal */
-    scroll-snap-type: x mandatory; /* Permite o efeito de snap ao rolar */
 }
 
 /* Para as imagens */
 .gallery img {
-    width: auto; /* Mantém a largura original da imagem */
+    width: 100%; /* Mantém a largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0.5em;
-    scroll-snap-align: start; /* Alinha as imagens ao iniciar a rolagem */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .product-container {
-        flex-direction: column; /* Mantenha a coluna em dispositivos móveis */
-    }
-
     .gallery {
         display: flex; /* Altera para flexbox em telas menores */
         overflow-x: auto; /* Permite rolagem horizontal */
         gap: 0.5em; /* Espaçamento entre as imagens */
+        scroll-snap-type: x mandatory; /* Permite o efeito de snap ao rolar */
     }
 
     .gallery img {
         min-width: 200px; /* Defina uma largura mínima para as imagens */
         height: auto; /* Mantém a proporção da imagem */
+        scroll-snap-align: start; /* Alinha as imagens ao iniciar a rolagem */
     }
 }
 
