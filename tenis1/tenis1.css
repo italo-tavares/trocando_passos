@@ -53,7 +53,9 @@ body {
 }
 
 .gallery img {
-    width: 80%;
+    width: auto; /* Alterado para auto para evitar estiramento */
+    height: 200px; /* Defina uma altura fixa */
+    object-fit: cover; /* Cobre o espaço da caixa mantendo a proporção */
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0.5em;
