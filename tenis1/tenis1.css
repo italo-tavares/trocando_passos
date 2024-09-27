@@ -178,6 +178,30 @@ nav ul li a:hover {
         font-size: 14px;
     }
 }
+@media (max-width: 768px) {
+    .gallery {
+        display: flex; /* Mude para flexbox */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Para um efeito de snapping ao rolar */
+    }
+
+    .gallery img {
+        min-width: 100%; /* Garante que cada imagem ocupe a largura total da tela */
+        scroll-snap-align: start; /* Alinhamento para o snapping */
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+        display: flex; /* Mude para flexbox */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Para um efeito de snapping ao rolar */
+    }
+
+    .gallery img {
+        min-width: 100%; /* Garante que cada imagem ocupe a largura total da tela */
+        scroll-snap-align: start; /* Alinhamento para o snapping */
+    }
+}
 /* Social Links */
 .social a {
     color: #fff;
