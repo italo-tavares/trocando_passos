@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,24 +18,20 @@ body {
     padding: 1em 2em;
     border-bottom: 1px solid #ddd;
 }
-
 .navbar h1 {
     font-size: 1.5em;
 }
-
 .navbar input {
     padding: 0.5em;
     font-size: 1em;
     border-radius: 5px;
     border: 1px solid #ddd;
 }
-
 .navbar .icons a {
     margin-left: 1em;
     text-decoration: none;
     color: #000;
 }
-
 /* Product Container and Gallery */
 .product-container {
     display: flex;
@@ -45,47 +39,37 @@ body {
     gap: 2em;
     margin-top: 100px; /* Altere o valor conforme necessário para o espaçamento desejado */
 }
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.1em;
 }
-
 .gallery img {
-    width: auto; /* Alterado para auto para evitar estiramento */
-    height: 200px; /* Defina uma altura fixa */
-    object-fit: cover; /* Cobre o espaço da caixa mantendo a proporção */
+    width: 80%;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0.5em;
 }
-
 /* Product Details */
 .product-details {
     max-width: 500px;
 }
-
 .product-details h2 {
     font-size: 1.8em;
     margin-bottom: 0.5em;
 }
-
 .price {
     color: red;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
-
 .description {
     font-size: 1em;
     margin-bottom: 1.5em;
 }
-
 .size-selection h4 {
     margin-bottom: 0.5em;
 }
-
 .sizes span {
     display: inline-block;
     padding: 0.5em;
@@ -95,11 +79,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .sizes span:hover {
     background-color: #ddd;
 }
-
 button {
     padding: 1em 2em;
     margin: 0.5em 0;
@@ -110,11 +92,9 @@ button {
     cursor: pointer;
     font-size: 1em;
 }
-
 button:hover {
     background-color: #d35400;
 }
-
 /* Footer */
 .footer-content {
     background: #333;
@@ -122,7 +102,6 @@ button:hover {
     text-align: center;
     padding: 10px 0;
 }
-
 /* Header */
 header {
     background-color: #fff;
@@ -133,7 +112,6 @@ header {
     top: 0;
     z-index: 100;
 }
-
 /* Container */
 .container {
     display: flex;
@@ -143,18 +121,15 @@ header {
     margin: auto;
     padding: 0 20px;
 }
-
 .logo-container {
     display: flex;
     align-items: center;
 }
-
 .logo {
     width: 50px;
     height: auto;
     margin-right: 10px;
 }
-
 /* Navigation */
 nav ul {
     list-style: none;
@@ -163,85 +138,60 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #333;
     padding: 10px;
     font-weight: bold;
 }
-
 nav ul li a:hover {
     color: #e67e22;
 }
-
 /* Media Queries */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
-    
     nav ul {
         justify-content: center;
     }
-    
     nav ul li {
         margin: 5px;
     }
-    
     h1 {
         font-size: 20px;
         margin-top: 15px; /* Aqui você pode ajustar a margem como desejado */
     }
-    
-    .gallery {
-        display: flex; /* Mude para flexbox */
-        overflow-x: auto; /* Permite rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Para um efeito de snapping ao rolar */
-    }
-
-    .gallery img {
-        min-width: 100%; /* Garante que cada imagem ocupe a largura total da tela */
-        scroll-snap-align: start; /* Alinhamento para o snapping */
-    }
 }
-
 @media (max-width: 480px) {
     .logo {
         width: 30px;
     }
-
     h1 {
         font-size: 18px;
     }
-
     nav ul li a {
         font-size: 14px;
     }
 }
-
 /* Social Links */
 .social a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
 }
-
 .social a:hover {
     color: #e67e22;
 }
-
 .share-options {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
 .share-options a {
     text-decoration: none;
     color: #333;
@@ -250,39 +200,31 @@ nav ul li a:hover {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
 .share-options a:hover {
     background-color: #ddd;
 }
-
 .product-description {
     margin-bottom: 20px;
 }
-
 .product-description p {
     line-height: 1.6;
 }
-
 .more-details {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
     color: #007BFF;
 }
-
 .more-details:hover {
     text-decoration: underline;
 }
-
 .product-details ul {
     list-style-type: none;
     padding: 0;
 }
-
 .product-details li {
     margin-bottom: 10px;
 }
-
 .product-description {
     width: 100%;
     margin: 0 auto;
