@@ -274,6 +274,38 @@ nav ul li a:hover {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.product-container {
+    display: flex;
+    margin: 2em;
+    gap: 2em;
+    margin-top: 100px; /* Altere o valor conforme necessário para o espaçamento desejado */
+    flex-direction: column; /* Adicione esta linha para empilhar em telas menores */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas em telas maiores */
+    gap: 0.1em;
+}
+
+.gallery img {
+    width: 100%; /* Altere para 100% para ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0.5em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Mantenha a coluna em dispositivos móveis */
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* Muda para 1 coluna em telas menores */
+    }
+}
 
 
 
