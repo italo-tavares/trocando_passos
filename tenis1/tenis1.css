@@ -274,31 +274,6 @@ nav ul li a:hover {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* Product Container and Gallery */
-.product-container {
-    display: flex;
-    margin: 2em;
-    gap: 2em;
-    margin-top: 100px; /* Altere o valor conforme necessário para o espaçamento desejado */
-    flex-direction: column; /* Mantém a coluna por padrão */
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas em telas maiores */
-    gap: 0.1em;
-}
-
-/* Para as imagens */
-.gallery img {
-    width: 100%; /* Mantém a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 0.5em;
-}
-
-/* Media Queries */
 @media (max-width: 768px) {
     .gallery {
         display: flex; /* Altera para flexbox em telas menores */
@@ -313,9 +288,6 @@ nav ul li a:hover {
         scroll-snap-align: start; /* Alinha as imagens ao iniciar a rolagem */
     }
 }
-
-/* Fim do seu CSS existente */
-
 
 
 
