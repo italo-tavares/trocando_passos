@@ -288,6 +288,13 @@ nav ul li a:hover {
         scroll-snap-align: start; /* Alinha as imagens ao iniciar a rolagem */
     }
 }
-
+/* Para as imagens */
+.gallery img {
+    width: 100%; /* Mantém a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0.5em;
+}
 
 
