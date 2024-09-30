@@ -54,7 +54,7 @@ body {
 
 .gallery img {
     width: 100%; /* Preenche a área da galeria */
-    max-width: 250px; /* Define um tamanho máximo para as imagens */
+    max-width: 500px; /* Define um tamanho máximo para as imagens */
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
