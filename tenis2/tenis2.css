@@ -49,11 +49,13 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.1em;
+    gap: 0.5em; /* Aumenta o espaço entre as imagens */
 }
 
 .gallery img {
-    width: 80%;
+    width: 100%; /* Preenche a área da galeria */
+    max-width: 500px; /* Define um tamanho máximo para as imagens */
+    height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0.5em;
@@ -267,6 +269,7 @@ nav ul li a:hover {
 .product-details li {
     margin-bottom: 10px;
 }
+
 .product-description {
     width: 100%;
     margin: 0 auto;
@@ -275,5 +278,23 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Empilha em dispositivos menores */
+    }
 
+    .gallery {
+        grid-template-columns: 1fr; /* Muda para 1 coluna em telas menores */
+        display: flex; /* Flexbox para rolagem horizontal */
+        overflow-x: auto; /* Ativa a rolagem horizontal */
+        gap: 0.5em; /* Espaçamento entre as imagens */
+    }
 
+    .gallery img {
+        min-width: 200px; /* Largura mínima para imagens */
+        height: auto; /* Mantém a proporção das imagens */
+    }
+}
+
+/* Final do código */
